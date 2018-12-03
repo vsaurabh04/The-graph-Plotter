@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>My Graph Plotter</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script type="text/javascript" src="Parser.js"></script>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	</head>
+
+	<body>
+		<div class = "unselectable">
+<p id = "test" style = "font-size:40px;color:red;text-align:center" class="small" >The Graphical Calculator</p>
+</div>
+<div  id = "formTheForm" class="leftdiv unselectable">
+<p class = "small"><strong>Explicit Function(s):</strong></p><br>
+	<form id = "text" onsubmit = "return false">
+		<table id="table">
+			<tr id="row0">
+				<td class="color-box" style="background-color: red;"></td>
+				<td><input type="text" id="input0"></td>
+				<td><input type="button" onclick="removeField(0)" value="(*)"></td>
+			</tr>
+		</table>
+
+			<input id = "Submission" type="submit" onclick="inputEx()">
+			<input type="button" id="addForm" onclick="addField(this.form)" value="(+)" >  		
+   	</form>
+   	
+   	<p><strong>Implicit Function</strong>[f(x, y) = 0]:</p>
+   	<table>
+   		<tr>
+   			<td class= "color-box" style="background-color: #EA07F1;"></td>
+   			<td><input type = "text" id = "imp1"></td>
+    		<td><input type  ="submit" onclick = "inputImp()"></td>
+		</tr>
+	</table>
+		<p id = "status"></p>
+</div>
+
+
+<div class = "middlediv">
+		<p align="left" class = "small" >
+			<canvas id = "PlotSpace" width= "700px" height = "460px" style = "border:3px solid #a9a9a9;"></canvas> 
+
+		</p>
+        <p align= "center">
+        	<a id="download" download="Graph.jpg"><button type="button" onclick="downloadCanvas()">Download</button></a>
+			<button type="button" onclick="selectCurve()">Tangent</button>
+		</p>
+</div>
+		<script type="text/javascript" src="Plotter.js"> </script>
+	</body>
+</html>
