@@ -9,9 +9,9 @@ It was made as a part of Advanced Track Project of the  course ESC101 for the ye
   <li>CSS</li>
   </ul>
 
-#### How to use
+#### How to use:
 Clone the repo or download and extract it and open the file <mark>gplot v.82.html</mark>.
-#### Functionalities available
+#### Functionalities available:
 <ul>
   <li>Implicit function using Newton Raphson Method</li>
   <li>Zoom out and Zoom in a Graph</li>
