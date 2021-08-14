@@ -10,7 +10,7 @@ It was made as a part of Advanced Track Project of the  course ESC101 for the ye
   </ul>
 
 #### How to use:
-Clone the repo or download and extract it and open the file <mark>gplot v.82.html</mark>.
+Visit the [link](https://vsaurabh04.github.io/The-graph-Plotter/)
 #### Functionalities available:
 <ul>
   <li>Implicit function using Newton Raphson Method</li>
