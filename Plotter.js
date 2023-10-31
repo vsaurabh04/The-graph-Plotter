@@ -262,7 +262,7 @@ function foo(){
 	ScaleX = (width/(bound.x.R - bound.x.L));				//ScaleX is pixel to x units ratio
 	ScaleY = (height/(bound.y.U - bound.y.L));
 	closeness = 100/(bound.y.U - bound.y.L);				//distance within which a point should be considered identical
-	precision = (bound.x.R - bound.x.L)/400;
+	precision = (bound.x.R - bound.x.L)/600;
 	setValues();
 	xLineGap = calLineGap(bound.y.U, bound.y.L, maxXLines);
 	yLineGap = calLineGap(bound.x.R, bound.x.L, maxYLines);
